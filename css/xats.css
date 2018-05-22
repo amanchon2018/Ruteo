@@ -1,0 +1,424 @@
+body{
+					background-color: #ffffff;
+					margin: 0;
+					font-family: Bebas Neue;
+				}
+				.lista-hambu {
+				  font-family: Bebas Neue;
+				  color: #fff;
+				  font-size: 20px;
+				  margin-top: 10px;
+
+				}
+				.switch{
+				  postion: relative;
+				  display:inline-block;
+				  width: 40px;
+				  height:20px;
+				  float: right;
+				  margin-top: 10px;
+				 }
+
+				.switch input {display:none;}
+
+				.slider{
+				position: absolute;
+				cursor: pointer;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: #ccc;
+				-webkit-transition:.4s;
+				transition: .4s;
+				}
+
+				.slider:before{
+				position: absolute;
+				content: "";
+				height: 20px;
+				width: 20px;
+				background-color: white;
+				-webkit-transition:.4s;
+				transition: .4s;
+				}
+
+				input:checked + .slider {
+				background-color: #2196F3;
+				}
+				input: focus + .slider {
+				box-shadow: 0 02px #2196F3;
+				}
+
+				input:checked + .slider:before{
+				-webkit-transform: translatex (26px);
+				-ms-transform: translates(26px);
+				transform: translatex(26px);
+				}
+				/* Rounded sliders*/
+				.slider.round{
+				border-radius: 34px;
+				}
+				.slider.round:before{
+				border-radius:50%;
+				}
+
+				/* Hamburguesa ----------*/
+
+				#navegacio {
+				padding-top: 40px;
+				width:200px;
+				height: 700px;
+				top: 0 ;
+				right:0;
+				bottom: 0 ;
+				left :-270px;
+				border-color: #3c3c3b;
+				list-style: none;
+				position: absolute;
+				z-index: 1;
+				background-color: #3c3c3b;
+
+				}
+
+
+				.activador{
+				position: fixed;
+				background-color: yellow;
+				}
+
+				label[for="activador"]{
+				position:fixed;
+				left:15px;
+				z-index:600;
+				width:60px;
+				height:60px;
+				cursor:pointer;
+				background-size:100%;
+				background-image: url(../img/menu.png);
+				background-repeat: no-repeat;
+				}
+
+				label[fot="activador"]::after{
+				color; #ffffff
+				display:block;
+				width:30px;
+				height: 30px;
+				font-size: 50px;
+				line-height: 7px;
+				text-align: center;
+				}
+				.activador:checked + label {left:270px;}
+				.activador:checked ~ .navegacio {left: 200px;}
+				.activador + label {
+				transition: left 0.3s;
+				}
+
+				.tot {
+				position: relative;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: 0;
+				}
+
+				.content {
+				width: 100%;
+				height: 100%;
+				top: 0;
+				right:0;
+				left: 0;
+				bottom: 0;
+				z-index: -3;
+				}
+
+
+			/*Estilo Principal*/
+
+				#barra{
+					padding-left: 12px;
+					padding-right: 12px;
+					width: auto;
+					height: 60px;
+					background-color: #cb2623;
+					text-align: center;
+					overflow: hidden;
+				}
+				#barra img {
+					padding: 10px;
+				}
+
+				#BarraH{
+					padding-top: 14px;
+					padding-left: 12px;
+					padding-right: 12px;
+					width: auto;
+					height: 44px;
+					text-align: center;
+					overflow: hidden;
+				}
+
+				#link{
+					position: relative;
+					z-index: 111111;
+				}
+				#link img {
+					margin-left: 80px;
+					padding: 15px;
+				}
+
+				.eventos{
+					width: 100%;
+					height: auto;
+				}
+
+				.eventosmenu{
+					width: 100%;
+					height: 100%;
+					margin-left: -15px;
+					padding: 0;
+					transform: translateX(-10px);
+					transform: translateY(-15px);
+				}
+
+				#eventos1{
+					width: 100%;
+					height: auto;
+					margin-bottom: -51px;
+				}
+				#megusta{
+					margin-bottom: -51px;
+					height:51px;
+					width:auto;
+					background-color: #000000;
+					opacity: 0.9;
+				}
+				#iconbar{
+					position: static;
+					margin: 5px;
+					padding: 8px 0;
+				}
+				#infoevt{
+					position: absolute;
+					margin: 5px;
+					transform: translateY(-12px);
+					line-height: 0.5em;
+					color: #fff;
+					z-index: 1;
+				}
+
+
+			/*Estilo Registro*/
+
+				#Bodyreg{
+					margin-top: 66px;
+					margin-bottom: 20px;
+				}
+
+				#Bodyreg2{
+					margin-top: 32px;
+					margin-bottom: 20px;
+				}
+
+				#LogoRegistro{
+					margin-bottom: 65px;
+				}
+
+				#LogoRegistro2{
+					margin-bottom: 34px;
+				}
+
+				#Barrareg{
+					margin-bottom: 9px;
+					height:44px;
+					width:308px;
+					background-color: #fff;
+					border-color:#28ABB9;
+					border-width:thin;
+					border-style: solid;
+					border-radius: 12px;
+					line-height: 0.95em;
+				}
+
+				#iconreg{
+					position: static;
+					margin: 5px;
+					padding: 8px 8px;
+				}
+
+				#datosreg{
+					color: #95989A;
+				}
+
+				#datosreg2{
+					color: #fff;
+					font-size: 0.85em;
+				}
+
+				#datosreg3{
+					font-size: 0.8em;
+				}
+
+				#datosreg4{
+					font-size: 0.85em;
+				}
+
+				#datosreg5{
+					color: #fff;
+					font-size: 0.8em;
+				}
+
+				#Inicioreg{
+					margin-top: 16px;
+					margin-bottom: 9px;
+					height:39px;
+					width:208px;
+					background-color: red;
+					border-radius: 20px;
+					line-height: 2.5em;
+				}
+
+				#Registroreg{
+					margin-top: 26px;
+					margin-bottom: 11px;
+					height:39px;
+					width:208px;
+					background-color: #fff;
+					border-color:#28ABB9;
+					border-width:thin;
+					border-style: solid;
+					border-radius: 20px;
+					line-height: 0.95em;
+				}
+
+				#Facereg{
+					margin-top: 11px;
+					margin-bottom: 9px;
+					height:39px;
+					width:208px;
+					background-color: #3b5998;
+					border-radius: 20px;
+					line-height: 2.5em;
+				}
+
+
+				/*Estilo Chats*/
+
+				#titpant{
+					position: absolute;
+					height:100%;
+					width:100%;
+					margin-top: 2px;
+					margin-left: -5px;
+					color: #fff;
+					font-family: Bebas Neue;
+					font-size: 40px;;
+					padding: 10px;
+				}
+
+				#icoperfil{
+					margin: 14px;
+				}
+
+				#namecht{
+					margin: 0;
+					transform: translateY(20px);
+					font-weight: bold;
+					font-size: 0.9em;
+				}
+
+				#horacht{
+					font-size: 0.8em;
+					margin-right: 17px;
+					margin-top: 5px;
+				}
+
+				#estadocht{
+					font-size: 0.8em;
+					margin-top: -5px;
+					margin-bottom: 28px;
+				}
+
+				/*Estilo Conversaciones*/
+
+				#chatpregunta{
+				background-color: #cb2623;
+				color: #FFF;
+				height:auto;
+				width:auto;
+				padding: 24px;
+				margin-top: 12px;
+				margin-left:28px;
+				margin-right: 106px;
+				border-radius: 20px;
+				}
+				#chatrespuesta{
+				background-color: #333;
+				color: #FFF;
+				height:auto;
+				width:auto;
+				padding: 24px;
+				margin-top: 12px;
+				margin-right: 28px;
+				margin-left: 106px;
+				border-radius: 20px;
+				}
+
+				#linkxat{
+					text-decoration: none;
+					color: black;
+				}
+
+				#horacht2{
+					font-size: 0.8em;
+					margin-right: 30px;
+					margin-top: 5px;
+				}
+
+				#horacht3{
+					font-size: 0.8em;
+					margin-left: 30px;
+					margin-top: 5px;
+				}
+
+				#flechar{
+					position: absolute;
+					margin-top:25px;
+					transform: translateX(15px);
+				}
+
+				#flechap{
+					position: absolute;
+					margin-top:25px;
+					transform: translateX(-36px);
+
+				}
+
+				#MensajeIntro{
+					position: fixed;
+					width: 100%;
+					height: 44px;
+					background-color: #cb2623;
+					text-align: center;
+					bottom: 0px;
+
+				}
+				#content {
+					width: 100%
+					margin: 0 auto;
+				}
+				#MIContent{
+					position: static;
+					width: 90%;
+					height: 44px;
+					text-align: center;
+					margin: 20px;
+					margin-top: 10px;
+				}
+
+				#BMensaje{
+					width: 60%;
+				}
+
+	}
